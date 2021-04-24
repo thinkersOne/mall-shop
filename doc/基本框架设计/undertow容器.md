@@ -1,4 +1,5 @@
-在项目中，我们曾用jemter对 `tomcat`与`undertow`进行了同等的压力测试，后发现，`undertow`比`tomcat` 的吞吐量应该要高20%，所以，我们选择了`undertow`作为我们的Serlvet容器，`undertow` 是红帽公司开发的一款基于 NIO 的高性能 Web 嵌入式服务器，这也是SpringBoot中所推荐使用的服务容器，相比其他的服务器他更加轻量级，但在默认的情况下，SpringBoot内嵌了`tomcat`服务器，所有需要先将`tomcat`进行移除。
+在项目中，我们曾用jemter对 `tomcat`与`undertow`进行了同等的压力测试，后发现，`undertow`比`tomcat` 的吞吐量应该要高20%，所以，我们选择了`undertow`作为我们的Serlvet容器，`undertow` 是红帽公司开发的一款基于 NIO 的高性能 Web 嵌入式服务器，这也是SpringBoot中所推荐使用的服务容器，相比其他的服务器他更加轻量级，但在默认的情况下，SpringBoot内嵌了`tomcat`服务器，
+所有需要先将`tomcat`进行移除。
 
 1.在pom.xml移除`tomcat`的依赖
 
