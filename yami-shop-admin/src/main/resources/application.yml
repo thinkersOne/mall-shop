@@ -26,3 +26,14 @@ mybatis-plus:
       field-strategy: NOT_NULL
       # 默认数据库表下划线命名
       table-underline: true
+
+##你生成的证书名字
+#server:
+#  ssl:
+#    protocol: TLS
+#    enabled: true
+#    key-store: classpath:tomcat.keystore
+#    #密钥库密码
+#    key-store-password: 123456
+#    keyStoreType: JKS
+#    keyAlias: tomcat
